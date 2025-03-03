@@ -1,24 +1,21 @@
-public class SwapNumbers {
+ublic class SwapNumbers {
 
     public static void main(String[] args) {
 
         float first = 1.20f, second = 2.45f;
 
+        // Display values before swap
         System.out.println("--Before swap--");
-        System.out.print("First number = " + first)
-        System.out.println("Second number = " + second);
+        System.out.println("First number = " + first);  // Added missing semicolon
+        System.out.println("Second number = " + second); // Added missing semicolon
 
-        // Value of first is assigned to temporary
-        float temporary = first;
+        // Swapping logic using a temporary variable
+        float temporary = first; // Store the value of 'first' in temporary
 
-        // Value of second is assigned to first
-        first = second
+        first = second; // Assign the value of 'second' to 'first'
+        second = temporary; // Assign the value of 'temporary' (which holds the original 'first') to 'second'
 
-        // Value of temporary (which contains the initial value of first) is assigned to second
-        second += temporary;
-
+        // Display values after swap
         System.out.println("--After swap--");
         System.out.println("First number = " + first);
         System.out.println("Second number = " + second);
-    }
-}
